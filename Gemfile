@@ -42,7 +42,6 @@ gem 'gravatar_image_tag', '~> 1.2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem "wysiwyg-rails"
 gem 'public_activity', '~> 1.5'
-# gem 'pg'
 gem 'sqlite3', '~> 1.3.6'
 gem "figaro"
 
@@ -66,5 +65,8 @@ group :development do
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
+group :production do
+  gem 'pg'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
