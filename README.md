@@ -1,4 +1,4 @@
-##Welcome!
+## Welcome!
 
 This application showcases Ruby on Rails and how it can work together with Vue.js
 
