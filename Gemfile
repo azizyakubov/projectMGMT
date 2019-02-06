@@ -42,7 +42,6 @@ gem 'gravatar_image_tag', '~> 1.2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem "wysiwyg-rails"
 gem 'public_activity', '~> 1.5'
-gem 'sqlite3', '~> 1.3.6'
 gem "figaro"
 
 group :development, :test do
@@ -51,6 +50,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3', '~> 1.3.6'
 end
 
 group :development do
