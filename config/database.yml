@@ -30,14 +30,15 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   username: projectmgmt
-  password: <%= ENV['DB_PASSWORD'] %>
+  password: password
 
 development:
   <<: *default
   adapter: postgresql
   database: projectmgmt_development
+  host: localhost
   username: projectmgmt
-  password: <%= ENV['DB_PASSWORD'] %>
+  password: password
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -47,7 +48,7 @@ test:
   adapter: postgresql
   database: projectmgmt_test
   username: projectmgmt
-  password: <%= ENV['DB_PASSWORD'] %>
+  password: password
 
 production:
   <<: *default
