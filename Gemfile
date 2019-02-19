@@ -44,6 +44,7 @@ gem "wysiwyg-rails"
 gem 'public_activity', '~> 1.5'
 gem "figaro"
 gem 'pg'
+gem 'sendgrid-ruby'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
